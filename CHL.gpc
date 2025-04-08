@@ -1,0 +1,18 @@
+#pragma METAINFO("input_test", 1, 0, "user101")
+
+fix32 cv_flag            = 0.;
+fix32 example_signal         = 0.;
+
+main {
+    if(gcv_ready()) {
+        gcv_read(0, &cv_flag);
+        if (cv_flag == 1.) {
+            gcv_read(4,  &example_signal);
+        }
+    }
+	
+	if (example_signal != 0.) {
+		set_val(STICK_1_X, clamp(get_actual(STICK_1_X) + example_signal, -100., 100.));
+	}
+
+}
