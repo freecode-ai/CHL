@@ -9,7 +9,7 @@ This repository demonstrates how to send signals directly to a Titan Two device 
 > **Disclaimer**: This project is intended **for educational purposes**. Use responsibly and abide by all applicable terms, conditions, and regulations for the Titan Two device.
 
 ## Features
-- **Direct HID Signaling**: Bypass the aging Gtuner back-end and send HID signals straight from Python (or other language) to your Titan Two device.
+- **Direct HID Signaling**: Avoid the aging Gtuner back-end and send HID signals straight from Python (or other language) to your Titan Two device.
 - **Easy Integration**: The concept can be easily adapted to other languages (C, C++, C#, JavaScript, etc.).
 - **Open-Source Collaboration**: Submit pull requests or fork this repo to help expand its capabilities – for instance, by loading GPC scripts and switching Titan Two slots without using the Gtuner IDE.
 
